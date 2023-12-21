@@ -161,6 +161,9 @@ export default {
   display: flex;
   align-items: center;
   gap: 20px;
+  @media (max-width:900px) {
+    flex-direction: column;
+  }
 }
 .todo-add button {
   padding: 10px 20px;
@@ -182,6 +185,21 @@ export default {
   grid-template-columns: repeat(5, 1fr);
   margin-inline: auto;
   grid-gap: 20px;
+  @media (max-width:1300px) {
+    grid-template-columns: repeat(4,1fr);
+  }
+  @media (max-width:1100px) {
+    grid-template-columns: repeat(3,1fr);
+  }
+  @media (max-width:1000px) {
+    grid-template-columns: repeat(3,1fr);
+  }
+  @media (max-width:800px) {
+    grid-template-columns: repeat(2,1fr);
+  }
+  @media (max-width:550px) {
+    grid-template-columns: 1fr;
+  }
 }
 .droppable {
   width: 100%;
